@@ -48,7 +48,7 @@
             </div>
         </div>
         <br>
-        <div class="container property-info-section">
+        <div class="container-fluid property-info-section">
             <div class="row">
                 <div class="col-6">
                     <h2>Property Info</h2>
@@ -107,9 +107,9 @@
             </div>
         </div>
         <br>
-        <div class="container purchase-info-section">
+        <div class="container-fluid purchase-info-section">
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <h2>Purchase Info</h2>
                     <div class="form-group">
                         <div>
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <h2>&nbsp;</h2>
                     <div class="form-group">
                         <div>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="col-2">
+                <div class="col-4">
                     <div class="form-group">
                         <div>
                             <label for="purchase-refinance-after-months">Refinance after how many months</label>
@@ -191,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="col-2">
+                <div class="col">
                     <div class="form-group">
                         <div>
                             <label for="purchase-estimated-rehab-months">Estimated Rehab Time in Months</label>
@@ -214,9 +214,9 @@
             <h2>Refinance Loan Details</h2>
             <h5>New loan</h5>
 
-            <div class="container refinance-info-section">
+            <div class="container-fluid refinance-info-section">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-6">
                         <div class="form-group">
                             <div>
                                 <label for="new-loan-amount">Enter Loan Amount</label>
@@ -231,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
                         <div class="form-group">
                             <div>
                                 <label for="loan-amortized-years">Amortized over how many years</label>
@@ -246,82 +246,124 @@
         </div>
 
         <br><br>
-        <div class="container income-section">
-            
-        <h2>Income</h2>
+        <div class="container-fluid income-section">
+
+            <h2>Income</h2>
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="form-group">
                         <div>
-                            <label for="new-loan-amount">Total Gross monthly rent</label>
-                            <input type="text" class="form-control" name="new-loan-amount"
-                                aria-describedby="newLoanAmount">
+                            <label for="gross-monthly-rent">Total Gross monthly rent</label>
+                            <input type="text" class="form-control" name="gross-monthly-rent"
+                                aria-describedby="totalGrossMonthlyRent">
                         </div>
 
                         <div>
-                            <label for="loan-interest-rate">Other monthly income</label>
-                            <input type="text" class="form-control" name="loan-interest-rate"
-                                aria-describedby="loanInterestRate">
+                            <label for="other-monthly-income">Other monthly income</label>
+                            <input type="text" class="form-control" name="other-monthly-income"
+                                aria-describedby="otherMonthlyIncome">
                         </div>
                     </div>
-                <h5>Fixed Landlord paid expenses</h5>
+                    <h5>Fixed Landlord paid expenses</h5>
                     <div class="form-group">
                         <div>
-                            <label for="loan-amortized-years">Monthly insurance</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="monthly-insurance">Monthly insurance</label>
+                            <input type="text" class="form-control" name="monthly-insurance"
+                                aria-describedby="monthlyInsurance">
                         </div>
                         <div>
-                            <label for="loan-amortized-years">Electricity</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="electricity">Electricity</label>
+                            <input type="text" class="form-control" name="electricity" aria-describedby="electricity">
                         </div>
                         <div>
-                            <label for="loan-amortized-years">Water &amp; Sewer</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="water-and-sewer">Water &amp; Sewer</label>
+                            <input type="text" class="form-control" name="water-and-sewer"
+                                aria-describedby="waterAndSewer">
                         </div>
                         <div>
-                            <label for="loan-amortized-years">Garbage</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="garbage">Garbage</label>
+                            <input type="text" class="form-control" name="garbage" aria-describedby="garbage">
                         </div>
                         <div>
-                            <label for="loan-amortized-years">HOA</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="hoa">HOA</label>
+                            <input type="text" class="form-control" name="hoa" aria-describedby="hoa">
                         </div>
 
                         <div>
                             <!-- COPIED FROM PREVIOUS INPUT -->
-                            <label for="loan-amortized-years">Property Taxes</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="property-taxes-dup">Property Taxes</label>
+                            <input type="text" class="form-control" name="property-taxes-dup"
+                                aria-describedby="propertyTaxes">
                         </div>
                         <div>
-                            <label for="loan-amortized-years">Other Monthly Expenses</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="other-monthly-expenses">Other Monthly Expenses</label>
+                            <input type="text" class="form-control" name="other-monthly-expenses"
+                                aria-describedby="otherMonthlyExpenses">
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <h5>Variable Landlord paid expenses</h5>
                     <div class="form-group">
                         <div>
-                            <label for="loan-amortized-years">Vacancy (%) % of your income</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="vacancy">Vacancy (&percnt; of your income)</label>
+                            <input type="text" class="form-control" name="vacancy" aria-describedby="vacancy">
                         </div>
                         <div>
-                            <label for="loan-amortized-years">Repairs & Maintenance (%)</label>
-                            <input type="text" class="form-control" name="loan-amortized-years"
-                                aria-describedby="amortizedOverHowManyYears">
+                            <label for="repairs-maintenance">Repairs &amp; Maintenance (&percnt;)</label>
+                            <input type="text" class="form-control" name="repairs-maintenance"
+                                aria-describedby="repairsAndMaintenance">
+                        </div>
+
+                        <div>
+                            <label for="capital-expenditure">Capital Expenditure</label>
+                            <input type="text" class="form-control" name="capital-expenditure"
+                                aria-describedby="capitalExpenditure">
+                        </div>
+                        <div>
+                            <label for="mgmt-fees">Management Fees</label>
+                            <input type="text" class="form-control" name="mgmt-fees" aria-describedby="managementFees">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <br><br>
+        <div class="container-fluid future-section">
+
+            <h2>Future Assumptions</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+
+                        <div>
+                            <label for="annual-income-growth">Annual Income Growth (&percnt;)</label>
+                            <input type="text" class="form-control" name="annualIncomeGrowth"
+                                aria-describedby="annual-income-growth">
+                        </div>
+                        <div>
+                            <label for="annual-pv-growth">Annual PV Growth (&percnt;)</label>
+                            <input type="text" class="form-control" name="annual-pv-growth"
+                                aria-describedby="annualPVGrowth">
+                        </div>
+
+                        <div>
+                            <label for="annual-expense-growth">Annual Expense Growth (&percnt;)</label>
+                            <input type="text" class="form-control" name="annual-expense-growth"
+                                aria-describedby="annualExpenseGrowth">
+                        </div>
+                        <div>
+                            <label for="sales-expenses">Sales Expenses (&percnt;) Realtor Fees</label>
+                            <input type="text" class="form-control" name="sales-expenses"
+                                aria-describedby="salesExpenses">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </form>
 
