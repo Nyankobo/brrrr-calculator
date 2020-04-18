@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePropertyInfoTable extends Migration
+class CreatePurchaseInfoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreatePropertyInfoTable extends Migration
      */
     public function up()
     {
-        Schema::create('property_info', function (Blueprint $table) {
+        Schema::create('purchase_info', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('purchase_price');
+            $table->bigInteger('closing_cost');
+            $table->bigInteger('estimated_repair_cost');
+            $table->bigInteger('arv');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreatePropertyInfoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('property_info');
+        Schema::dropIfExists('purchase_info');
     }
 }

@@ -12,7 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/**
+ * Get property form
+ */
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+/**
+ * Save property details
+ */
+Route::post('/save', 'CalculateController@index')->name('save-form');
+
