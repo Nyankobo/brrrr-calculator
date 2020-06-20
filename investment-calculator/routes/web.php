@@ -15,12 +15,15 @@ use Illuminate\Support\Facades\Route;
 /**
  * Get property form
  */
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'FormController@index')->name('home');
 
 /**
  * Save property details
  */
 Route::post('/save', 'CalculateController@index')->name('save-form');
+
+/**
+ * Display Results
+ */
+Route::get('/results/{id}', 'CalculateController@results')->name('results');
 

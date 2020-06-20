@@ -2,11 +2,8 @@
     @extends('layouts.app')
     
     @section('content')
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
-        <![endif]-->
 
-    <form action="/save" method="POST">
+    <form action="/save" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="container-fluid report-title-section">
             <div class="row text-center">
@@ -338,6 +335,6 @@
             </div>
         </div>
 
-
+        <button class="button is-large" type="submit">Submit</button>
     </form>
 @endsection

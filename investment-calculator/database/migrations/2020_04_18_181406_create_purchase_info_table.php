@@ -15,10 +15,11 @@ class CreatePurchaseInfoTable extends Migration
     {
         Schema::create('purchase_info', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('purchase_price');
-            $table->bigInteger('closing_cost');
-            $table->bigInteger('estimated_repair_cost');
-            $table->bigInteger('arv');
+            $table->integer('property_id')->nullable();
+            $table->bigInteger('purchase_price')->nullable();
+            $table->bigInteger('closing_cost')->nullable();
+            $table->bigInteger('estimated_repair_cost')->nullable();
+            $table->bigInteger('arv')->nullable();
             $table->timestamps();
         });
     }
